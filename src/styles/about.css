@@ -1,0 +1,37 @@
+.about {
+	padding: 2rem 10rem;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
+.about-header {
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 400;
+	position: relative;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+.about-header::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0.5rem);
+    height: 1.5px;
+    width: 4rem;
+    background-color: var(--burgundy);
+}
+
+.about-banner {
+	height: 50vh;
+	width: 100vw;
+}
+
+.about-banner img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
