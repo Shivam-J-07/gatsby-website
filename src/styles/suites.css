@@ -1,0 +1,38 @@
+.suite-tabs button {
+    background: none;
+    border: 1px solid #1A1A1A;
+    padding: 0.7rem 1.25rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.suite-tabs button:hover {
+    background: #1A1A1A;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+.suite-tabs button.active {
+    background: #1A1A1A;
+    color: #fff;
+}
+
+.suite-card-container.flex-row {
+    justify-content: start;
+    gap: 2rem;
+    margin: 1rem 2.5rem;
+}
+
+.suite-image {
+    width: 25vw;             /* Set the width to 25% of the viewport width */
+    max-width: 100%;         /* Ensure the image never exceeds its container's width */
+    display: block;          /* Make the image a block element to remove any unwanted space below it */
+    object-fit: cover;       /* If the aspect ratio is different, this will make sure the image covers the available space without stretching */
+}
+
+.suite-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
