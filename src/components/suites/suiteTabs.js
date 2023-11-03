@@ -1,11 +1,24 @@
 import React, { useState } from "react";
 import SuiteCard from './suiteCard.js';
+import SuiteModal from './suiteModal.js'; // Import the modal component you'll be using
 
 const Tabs = ({ data }) => {
     const [activeTab, setActiveTab] = useState(data[0].label);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedSuite, setSelectedSuite] = useState(null);
 
     const handleClick = (tab) => {
         setActiveTab(tab);
+    }
+
+    const handleCardClick = (suite) => {
+        setSelectedSuite(suite);
+        setIsModalOpen(true);
+    }
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedSuite(null); // Optional: Clear the selected suite when closing the modal
     }
 
     return (
@@ -24,8 +37,8 @@ const Tabs = ({ data }) => {
                     if (tab.label === activeTab) {
                         return (
                             <div key={index} className="suite-card-container flex-row">
-                                {tab.content.map((suite, Index) => (
-                                    <SuiteCard key={Index} suite={suite} />
+                                {tab.content.map((suite, sIndex) => (
+                                    <SuiteCard key={sIndex} suite={suite} onCardClick={handleCardClick} />
                                 ))}
                             </div>
                         )
@@ -33,6 +46,11 @@ const Tabs = ({ data }) => {
                     return null;
                 })}
             </div>
+
+            {/* The modal component */}
+            {selectedSuite && (
+                <SuiteModal isOpen={isModalOpen} onRequestClose={closeModal} content={selectedSuite} />
+            )}
         </div>
     )
 }

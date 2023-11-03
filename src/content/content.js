@@ -37,9 +37,11 @@ const nav_content = {
 export const tabs_content = [
     { 
         label: "1 BEDROOM", 
+        id: 1,
         content: [
             {
-                image: "./turin_floorplan.png",
+                floorplan_img: "./turin_floorplan.png",
+                carousel_imgs: "./carousels/1-bed/",
                 name: "Turin",
                 price: "1,450",
                 bed: "1",
@@ -49,7 +51,11 @@ export const tabs_content = [
         ] 
     },
     { 
-        label: "2 BEDROOM", 
+        label: "2 BEDROOM",
+        id: 2, 
+        images: [
+            "./carousels/1-bed/",
+        ],
         content: [
             {
                 image: "",
@@ -79,6 +85,10 @@ export const tabs_content = [
     },
     { 
         label: "1 BEDROOM + DEN", 
+        id: 3,
+        images: [
+            "./carousels/1-bed/",
+        ],
         content: [
             {
                 image: "",
@@ -108,6 +118,10 @@ export const tabs_content = [
     },
     { 
         label: "2 BEDROOM + DEN", 
+        id: 4,
+        images: [
+            "./carousels/1-bed/",
+        ],
         content: [
             {
                 image: "",
@@ -139,13 +153,33 @@ export const tabs_content = [
 
 export const amenities_content = [
     {
-        image: "path-to-image1.jpg",
+        image: "./amenities/appliances.png",
         title: "Modern Appliances",
         description: "This is a fake sentence"
     },
     {
-        image: "path-to-image2.jpg",
+        image: "./amenities/location.png",
         title: "Amazing Location",
+        description: "This is a fake sentence"
+    },
+    {
+        image: "./amenities/pets.png",
+        title: "Pet-Friendly",
+        description: "This is a fake sentence"
+    },
+    {
+        image: "./amenities/gym.png",
+        title: "Fitness Centre",
+        description: "This is a fake sentence"
+    },
+    {
+        image: "./amenities/common_room.png",
+        title: "Common Room",
+        description: "This is a fake sentence"
+    },
+    {
+        image: "./amenities/laundry.png",
+        title: "Ensuite Laundry",
         description: "This is a fake sentence"
     },
 ]
