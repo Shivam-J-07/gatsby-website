@@ -16,7 +16,8 @@ const modalStyles = {
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
       width: '50%', // Set width
-      height: '50%', // Set height
+      height: 'auto', // Set height
+      overflow: 'hidden', // Hide all scroll bars
     },
     overlay: {
       backgroundColor: 'rgba(0, 0, 0, 0.75)', // Semi-transparent overlay
@@ -32,9 +33,7 @@ const SuiteModal = ({ isOpen, onRequestClose, content }) => {
             contentLabel="Suite Modal"
             style={modalStyles}
         >
-            {content.name}
             <button onClick={onRequestClose}>Close</button>
-            <p>{content.label}</p>
             <SuiteCarousel />
         </Modal>
     );

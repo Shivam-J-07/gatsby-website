@@ -9,17 +9,15 @@ const SuiteCarousel = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToScroll: 1
     };
 
     return (
-        <>
-            <Slider {...settings}>
-                <div><img src="./carousels/1=bed/floorplan.jpg" alt="1" /></div>
-                <div><img src="./carousels/1=bed/3d-floorplan.jpg" alt="2" /></div>
-                {/* More slides */}
-            </Slider>
-        </>
+        <Slider {...settings} className="suite-modal-carousel">
+            <div><img src="./carousels/1-bed/floorplan.png" alt="1" /></div>
+            <div><img src="./carousels/1-bed/3d-floorplan.png" alt="2" /></div>
+            {/* More slides */}
+        </Slider>
     );
 };
 
