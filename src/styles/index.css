@@ -98,3 +98,33 @@
 	top: 1rem;
     left: 1rem;
 }
+
+.modal-carousel img {
+    width: 100%;
+	max-height: 100%;        
+    object-fit: cover; 
+    object-position: center; 
+}
+
+/* Add this to your CSS file */
+.modal-carousel .slick-prev,
+.modal-carousel .slick-next {
+    z-index: 10; /* Increase z-index to ensure they are above other content */
+    position: absolute; /* Position them relative to the carousel */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Align the center */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.modal-carousel .slick-prev:before,
+.modal-carousel .slick-next:before {
+    display: none;
+}
+
+.modal-carousel .slick-prev {
+    left: 1rem; /* Position from the left */
+}
+
+.modal-carousel .slick-next {
+    right: 1rem; /* Position from the right */
+}

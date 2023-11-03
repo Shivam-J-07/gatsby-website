@@ -53,32 +53,3 @@
     height: 1.5px; /* Thickness of the underline */
     background-color: #1A1A1A; /* Color of the underline (change as needed) */
 }
-
-.suite-modal-carousel img {
-    width: 100%;           
-    object-fit: contain; 
-    object-position: center; 
-}
-
-/* Add this to your CSS file */
-.suite-modal-carousel .slick-prev,
-.suite-modal-carousel .slick-next {
-    z-index: 10; /* Increase z-index to ensure they are above other content */
-    position: absolute; /* Position them relative to the carousel */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Align the center */
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
-.suite-modal-carousel .slick-prev:before,
-.suite-modal-carousel .slick-next:before {
-    display: none;
-}
-
-.suite-modal-carousel .slick-prev {
-    left: 1rem; /* Position from the left */
-}
-
-.suite-modal-carousel .slick-next {
-    right: 1rem; /* Position from the right */
-}
