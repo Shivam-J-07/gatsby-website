@@ -32,6 +32,10 @@
 	width: 100%;
 }
 
+.half-width {
+	width: 50%;
+}
+
 .header {
 	text-transform: uppercase;
 	font-size: 2rem;
@@ -84,4 +88,13 @@
     color: var(--charcoal);
     border-color: var(--charcoal);
     cursor: pointer;
+}
+
+.close-modal-btn {
+	border: none;
+	cursor: pointer;
+	background: transparent;
+	position: absolute;
+	top: 1rem;
+    left: 1rem;
 }

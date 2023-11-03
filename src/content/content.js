@@ -53,17 +53,15 @@ export const tabs_content = [
     { 
         label: "2 BEDROOM",
         id: 2, 
-        images: [
-            "./carousels/1-bed/",
-        ],
         content: [
             {
-                image: "",
-                name: "",
-                price: "",
-                bed: "",
-                bath: "",
-                sqft: ""
+                floorplan_img: "./floorplans/palmero_floorplan.png",
+                carousel_imgs: "./carousels/1-bed/",
+                name: "Palmero",
+                price: "1700",
+                bed: "2",
+                bath: "1",
+                sqft: "872"
             },
             {
                 image: "",
@@ -182,4 +180,31 @@ export const amenities_content = [
         title: "Ensuite Laundry",
         description: "This is a fake sentence"
     },
+]
+
+export const gallery_content = [
+    {
+        id: 1,
+        img: "./gallery/img_1.jpg"
+    },
+    {
+        id: 2,
+        img: "./gallery/img_2.jpg"
+    },
+    {
+        id: 3,
+        img: "./gallery/img_3.jpg"
+    },
+    {
+        id: 4,
+        img: "./gallery/img_4.jpg"
+    },
+    {
+        id: 5,
+        img: "./gallery/img_5.jpg"
+    },
+    {
+        id: 6,
+        img: "./gallery/img_6.jpg"
+    }
 ]

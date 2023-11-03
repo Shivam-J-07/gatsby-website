@@ -1,7 +1,6 @@
-// CarouselComponent.js
-
 import React, { useState } from "react";
 import Slider from "react-slick";
+import { PrevArrow, NextArrow } from "../common/ModalIcons";
 
 const SuiteCarousel = () => {
     const settings = {
@@ -9,7 +8,9 @@ const SuiteCarousel = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
     };
 
     return (

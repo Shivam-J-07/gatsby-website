@@ -37,9 +37,48 @@
     gap: 0.25rem;
 }
 
+.suite-modal-heading.flex-row {
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+.suite-modal-heading::after {
+    content: ""; /* This is required for the pseudo-element to be generated */
+    position: absolute;
+    bottom: 0; /* Position it at the bottom of the div */
+    left: 0; /* Starting from the left edge */
+    width: 100%; /* Span the full width of the div */
+    height: 1.5px; /* Thickness of the underline */
+    background-color: #1A1A1A; /* Color of the underline (change as needed) */
+}
+
 .suite-modal-carousel img {
-    width: 100%;       
-    height: 100%;     
+    width: 100%;           
     object-fit: contain; 
     object-position: center; 
+}
+
+/* Add this to your CSS file */
+.suite-modal-carousel .slick-prev,
+.suite-modal-carousel .slick-next {
+    z-index: 10; /* Increase z-index to ensure they are above other content */
+    position: absolute; /* Position them relative to the carousel */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Align the center */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.suite-modal-carousel .slick-prev:before,
+.suite-modal-carousel .slick-next:before {
+    display: none;
+}
+
+.suite-modal-carousel .slick-prev {
+    left: 1rem; /* Position from the left */
+}
+
+.suite-modal-carousel .slick-next {
+    right: 1rem; /* Position from the right */
 }
