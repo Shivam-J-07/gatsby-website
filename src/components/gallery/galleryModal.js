@@ -5,7 +5,7 @@ import BasicCarousel from '../common/basicCarousel';
 const GalleryModal = ({ isOpen, onRequestClose, images, initialSlide }) => {
     return (
         <BasicModal isOpen={isOpen} onRequestClose={onRequestClose}>
-            <BasicCarousel images={images} initialSlide={initialSlide} />
+            <BasicCarousel images={images} initialSlide={initialSlide}/>
         </BasicModal>
     );
 }

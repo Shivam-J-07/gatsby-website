@@ -4,6 +4,7 @@ import About from './_about.js'
 import Suites from './_suites.js'
 import Amenities from "./_amenities.js"
 import Gallery from "./_gallery.js"
+import Neighbourhood from "./_neighbourhood.js"
 import styles from '../styles/index.css'
 import ReactModal from 'react-modal';
 
@@ -19,6 +20,7 @@ export default function App() {
       <Suites />
       <Amenities/>
       <Gallery />
+      <Neighbourhood />
     </div>
   )
 }

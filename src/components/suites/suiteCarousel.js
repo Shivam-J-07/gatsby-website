@@ -10,7 +10,7 @@ const carousel_imgs = [
 
 const SuiteCarousel = () => {
     return (
-        <BasicCarousel images={carousel_imgs}/>
+        <BasicCarousel images={carousel_imgs} size="small"/>
     );
 };
 

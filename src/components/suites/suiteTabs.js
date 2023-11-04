@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SuiteCard from './suiteCard.js';
 import SuiteModal from './suiteModal.js'; // Import the modal component you'll be using
 
-const Tabs = ({ data }) => {
+const SuiteTabs = ({ data }) => {
     const [activeTab, setActiveTab] = useState(data[0].label);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedSuite, setSelectedSuite] = useState(null);
@@ -55,4 +55,4 @@ const Tabs = ({ data }) => {
     )
 }
 
-export default Tabs;
+export default SuiteTabs;

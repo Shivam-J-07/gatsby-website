@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import { PrevArrow, NextArrow } from "../common/modalIcons";
+import { PrevArrow, NextArrow } from "./modalIcons";
 
-const BasicCarousel = ({ images, initialSlide = 0 }) => {
+const BasicCarousel = ({ size = "large", images, initialSlide = 0 }) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -15,9 +15,9 @@ const BasicCarousel = ({ images, initialSlide = 0 }) => {
     };
 
     return (
-        <Slider {...settings} className="modal-carousel">
+        <Slider {...settings} className={`modal-carousel ${size}`}  >
             {images.map((img, index) => (
-                <div key={index}><img src={img} alt={`slide-${index}`} /></div>
+                <img src={img} alt={`slide-${index}`}/>
             ))}
         </Slider>
     );

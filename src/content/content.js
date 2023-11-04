@@ -40,7 +40,7 @@ export const tabs_content = [
         id: 1,
         content: [
             {
-                floorplan_img: "./turin_floorplan.png",
+                floorplan_img: "./floorplans/turin_floorplan.png",
                 carousel_imgs: "./carousels/1-bed/",
                 name: "Turin",
                 price: "1,450",
@@ -58,7 +58,7 @@ export const tabs_content = [
                 floorplan_img: "./floorplans/palmero_floorplan.png",
                 carousel_imgs: "./carousels/1-bed/",
                 name: "Palmero",
-                price: "1700",
+                price: "1,700",
                 bed: "2",
                 bath: "1",
                 sqft: "872"

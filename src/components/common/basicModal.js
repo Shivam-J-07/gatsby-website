@@ -9,9 +9,8 @@ const modalStyles = {
         right: 'auto',
         bottom: 'auto',
         transform: 'translate(-50%, -45%)',
-        width: '60%', // Set width
-        height: 'auto',
-        overflow: 'hidden', // Hide all scroll bars
+        width: '80vh',
+        padding: '2.5rem'
     },
     overlay: {
         backgroundColor: 'rgba(0, 0, 0, 0.75)', // Semi-transparent overlay
